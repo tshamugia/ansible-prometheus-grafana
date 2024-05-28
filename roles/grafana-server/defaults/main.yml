@@ -1,0 +1,9 @@
+---
+# defaults file for grafana-server
+
+grafana_port: 3000
+grafana_address: "localhost"
+grafana_username: "admin"
+grafana_password: "admin"
+nginx_server_name: "grafana.example.com"
+prometheus_url: "http://localhost:9090"

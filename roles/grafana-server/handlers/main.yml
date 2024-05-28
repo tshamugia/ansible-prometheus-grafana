@@ -1,0 +1,12 @@
+---
+# handlers file for grafana-server
+
+- name: Restart Grafana
+  systemd:
+    name: grafana-server
+    state: restarted
+
+- name: Restart Nginx
+  systemd:
+    name: nginx
+    state: restarted

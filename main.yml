@@ -1,0 +1,6 @@
+- hosts: all
+  become: true
+  roles:
+    - { role: prometheus-alertmanager, when: "'lb' in group_names"}
+    - { role: exporter, when: "'web' in group_names"}
+    - { role: grafana-server, when: "'lb' in group_names"}
